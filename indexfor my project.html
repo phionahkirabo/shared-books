@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="stylle.css">
+    <!-- <link rel="stylesheet" href="contact.css> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="about us.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <!---we had linked our css file----->
+</head>
+<style type="text/css">
+
+</style>
+
+<body>
+
+    <div class="navbar">
+        <div>
+            <a href='website.html'>BOOK SHARING</a>
+        </div>
+        <nav>
+            <ul id='MenuItems'>
+                <li><a href='#navbar'>Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href='#service'>Services</a></li>
+                <li><a href='#contact'>Contact</a></li>
+                <!-- <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"
+                        style="width:auto;">Login</button></li> -->
+            </ul>
+        </nav>
+    </div>
+    <!-- <div id='login-form' class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text' class='input-field' placeholder='Email Id' required><br>
+                <input type='password' placeholder='Enter Password' required><br><br>
+                <input type='checkbox'><span>Remember Password</span><br>
+                <button type='submit' class='submit-btn'>Login</button>
+            </form>
+            <form id='register' class='input-group-register'>
+                <input type='text' class='input-field' placeholder='First Name' required>
+                <input type='text' class='input-field' placeholder='Last Name ' required>
+                <input type='email' class='input-field' placeholder='Email Id' required>
+                <input type='password' class='input-field' placeholder='Enter Password' required>
+                <input type='password' class='input-field' placeholder='Confirm Password' required>
+                <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit' class='submit-btn'>Register</button>
+            </form>
+        </div>
+    </div> -->
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 70%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+  /* .loginform h2{
+      font-size: 50px;
+      align-items: center;
+      margin-left: 50%;
+  }
+
+  .loginform{
+      padding-top: 5px;
+      font-size: 50px;
+      align-items: center;
+      padding-left: 50%; */
+  }
+
+</style>
+</head>
+<body>
+<div class="loginform">
+<!-- <h2>login-form</h2> -->
+<p>
+    SHARED BOOKS<br>
+    What we do for our clients<br>
+    You are able and allowed to<br>
+    DOWNLOAD<BR>
+        SHARE<BR>
+            UPDATE.
+</p>
+</div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="loginf">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+    <!-- <div class="big-container" id="service">
+        <div class="container">
+            <div class="categories">
+                <div class="image">
+                    <img src="nov2.jpg" alt="Avatar" class="image" style="width:100%">
+                    <p></p> <a
+                        href="https://www.amazon.com/Love-Story-Novel-Baxter-Family/dp/1982122307?asin=1982122307&revisionId=&format=4&depth=1">Read
+                        more</p>
+                </div>
+
+                <div class="middle">
+                    <div class="text">
+                        <p><img src="nov3.jpg">
+                            <a
+                                href="https://www.amazon.com/gp/product/B01ATN708M?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks">Read
+                                more</a>
+                            <a
+                                href="https://www.amazon.com/gp/product/B01ATN708M?ref_=dbs_p_pwh_rwt_anx_cl_0&storeType=ebooks">download</a>
+                        </p>
+                        <p><img src="nov4.jpg">
+                            <a
+                                href=" https://www.amazon.com/Course-Love-Novel-Alain-Botton/dp/1501134515/ref=sr_1_3?crid=2ZD724VK4O41N&keywords=love+book+novel&qid=1647593117&s=books&sprefix=love+book+novel%2Cstripbooks-intl-ship%2C731&sr=1-3">Read
+                                more</a>
+                        </p>
+                        <p>
+                            <img src="nov5.jpg">
+                            <a
+                                href="https://www.amazon.com/One-Day-David-Nicholls-audiobook/dp/B003VXKCXI?ref_=pd_sn_dp_a2a_d_rs_dp_5&pd_rd_w=a1DF5&pf_rd_p=b505a0eb-5d9b-4c02-92dd-6dd268791207&pf_rd_r=BGT7MPH7HXGVYKP1SYK0&pd_rd_r=9a190a2e-dbbf-4b07-b27e-154b6931a43b&pd_rd_wg=WQAM7">Read
+                                more</a>
+                        </p>
+                        <p><img src="nov4.jpg">
+                            <a
+                            href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                            more</a>
+                            <a
+                            href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                    </P>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="categories">
+                <div class="image">
+                    <img src="ge1.webp" alt="Avatar" class="image" style="width:100%">
+                    <a href https="://www.justdial.com/jdmart/Delhi/Geography-Books/pid-301481647/011P76944">Read
+                        more</a>
+                </div>
+
+                <div class="middle">
+                    <div class="text">
+                        <p><img src="ge2.jfif">
+                            <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                                more</a>
+                                <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                        </P>
+
+
+                        <p><img src="ge3.jfif"> 
+                            <a
+                            href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                            more</a>
+                            <a
+                            href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                    </P>
+
+                        <p>
+                            <img src="ge4.jpg">
+                            <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                                more</a>
+                                <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                        </P>
+
+                        <p>
+                            <img src="ge5.jfif">
+                            <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                                more</a>
+                                <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                        </P>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="categories">
+                <div class="image">
+                    <p><img src="bi1.jpg" alt="Avatar" class="image" style="width:100%">
+                        <a href="https://www.amazon.com/Holt-McDougal-Biology-Student-School/dp/0547219474">Read
+                            more</a>
+                    </p>
+                </div>
+
+                <div class="middle">
+                    <div class="text">
+                        <p><img src="bi2.jpg">
+                            <a href="https://www.amazon.com/Biology-Dynamics-California-Glencoe-Science/dp/0078665809">Read
+                                more</a>
+                        </p>
+                        <P><img src="bi3.jpg">
+                            <a href="https://www.pinterest.com/pin/471048442275533656/">Read more</a>
+                        </P>
+                        <P><img src="bi4.jfif">
+                            <a href="https://rhythmofthehome.com/best-biology-textbooks/">Read more</a>
+                        </P>
+                        <P><img src="bi5.jfif">
+                            <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                                more</a>
+                                <a
+                                href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                        </P>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div> -->
+
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+      <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tab.css">
+    
+      <style>
+        /* ul {
+          list-style-type: none;
+          margin: 0;
+          padding-top: 30px;
+          padding-left: 15px;
+          margin: 20px;
+          display: flex;
+          flex-direction: row;
+        }
+    
+        li a {
+          display: flex;
+          flex-direction: row;
+          width: 60px;
+          background-color: #dddddd;
+          text-decoration: none;
+          font-size: 45px;
+          color: black;
+          font-weight: 100px;
+          font-style: italic;
+          width: 200px;
+          padding-top: 10px;
+          padding-left: 15px;
+          margin: 20px;
+        } */
+      </style>
+    </head>
+    
+    <body>
+    
+      <ul>
+        <li><a href="#service">JS</a></li>
+        <li><a href="#container">css</a></li>
+        <li><a href="#container">javascript</a></li>
+        <li><a href="#container">html</a></li>
+      </ul>
+    
+      <div class="big-container" id="service">
+        <!-- <div class="container">
+          <div class="categories"> -->
+            <!-- <div class="image">
+                  <img src="nov2.jpg" alt="Avatar" class="image" style="width:25%">
+                  <p></p> <a
+                      href="https://www.amazon.com/Love-Story-Novel-Baxter-Family/dp/1982122307?asin=1982122307&revisionId=&format=4&depth=1">Read
+                      more</p>
+              </div> -->
+    
+            <!-- <div class="middle"> -->
+              <div class="text">
+                <div>
+                  <!-- <p><img src="ge2.jfif">
+                    <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                      more</a>
+                    <a
+                      href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                  </P>
+      
+      
+                  <p><img src="ge3.jfif">
+                    <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                      more</a>
+                    <a
+                      href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                  </P>
+      
+                  <p>
+                    <img src="ge4.jpg">
+                    <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                      more</a>
+                    <a
+                      href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                  </P>
+      
+                  <p>
+                    <img src="ge5.jfif">
+                    <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                      more</a>
+                    <a
+                      href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                  </P> -->
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="container" id="container">
+          <!-- <div class="categories"> -->
+            <!-- <div class="image">
+                <img src="ge1.webp" alt="Avatar" class="image" style="width:25%">
+                <a href https="://www.justdial.com/jdmart/Delhi/Geography-Books/pid-301481647/011P76944">Read
+                    more</a>
+            </div> -->
+    
+            <!-- <div class="middle"> -->
+              <div class="text">
+                <p><img src="ge2.jfif">
+                  <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                    more</a>
+                  <a
+                    href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                </P>
+    
+    
+                <p><img src="ge3.jfif">
+                  <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                    more</a>
+                  <a
+                    href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                </P>
+    
+                <p>
+                  <img src="ge4.jpg">
+                  <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                    more</a>
+                  <a
+                    href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                </P>
+    
+                <p>
+                  <img src="ge5.jfif">
+                  <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                    more</a>
+                  <a
+                    href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                </P>
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="container" id="container">
+          <!-- <div class="categories"> -->
+            <!-- <div class="image">
+              <p><img src="bi1.jpg" alt="Avatar" class="image" style="width:25%">
+                  <a href="https://www.amazon.com/Holt-McDougal-Biology-Student-School/dp/0547219474">Read
+                      more</a>
+              </p>
+          </div> -->
+    
+            <!-- <div class="middle"> -->
+              <div class="text">
+                <p><img src="bi2.jpg">
+                  <a href="https://www.amazon.com/Biology-Dynamics-California-Glencoe-Science/dp/0078665809">Read
+                    more
+                    
+                </a>
+                </p>
+                <P><img src="bi3.jpg">
+                  <a href="https://www.pinterest.com/pin/471048442275533656/">Read more</a>
+                </P>
+                <P><img src="bi4.jfif">
+                  <a href="https://rhythmofthehome.com/best-biology-textbooks/">Read more</a>
+                </P>
+                <P><img src="bi5.jfif">
+                  <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                    more</a>
+                  <a
+                    href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+                </P>
+    
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+    
+    
+      </div>
+      <div class="container" id="container">
+        <!-- <div class="categories"> -->
+          <!-- <div class="image">
+              <p><img src="bi1.jpg" alt="Avatar" class="image" style="width:25%">
+                  <a href="https://www.amazon.com/Holt-McDougal-Biology-Student-School/dp/0547219474">Read
+                      more</a>
+              </p>
+          </div> -->
+    
+          <!-- <div class="middle"> -->
+            <div class="text">
+              <p><img src="bi2.jpg">
+
+                <a href="https://www.amazon.com/Biology-Dynamics-California-Glencoe-Science/dp/0078665809">Read
+                  more</a>
+              </p>
+              <P><img src="bi3.jpg">
+                <a href="https://www.pinterest.com/pin/471048442275533656/">Read more</a>
+              </P>
+              <P><img src="bi4.jfif">
+                <a href="https://rhythmofthehome.com/best-biology-textbooks/">Read more</a>
+              </P>
+              <P><img src="bi5.jfif">
+                <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                  more</a>
+                <a
+                  href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+              </P>
+    
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      </div>
+      <div class="container" id="container">
+        <!-- <div class="categories"> -->
+          <!-- <div class="image">
+              <p><img src="bi1.jpg" alt="Avatar" class="image" style="width:25%">
+                  <a href="https://www.amazon.com/Holt-McDougal-Biology-Student-School/dp/0547219474">Read
+                      more</a>
+              </p>
+          </div> -->
+    
+          <!-- <div class="middle"> -->
+            <div class="text">
+              <p><img src="bi2.jpg">
+                <a href="https://www.amazon.com/Biology-Dynamics-California-Glencoe-Science/dp/0078665809">Read
+                  more</a>
+              </p>
+              <P><img src="bi3.jpg">
+                <a href="https://www.pinterest.com/pin/471048442275533656/">Read more</a>
+              </P>
+              <P><img src="bi4.jfif">
+                <a href="https://rhythmofthehome.com/best-biology-textbooks/">Read more</a>
+              </P>
+              <P><img src="bi5.jfif">
+                <a href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">Read
+                  more</a>
+                <a
+                  href="books/Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive ).pdf">download</a>
+              </P>
+    
+    
+            </div>
+          </div>
+    
+        </div>
+      </div>
+      </div>
+    </body>
+    
+    </html>
+
+    <div class="section" id="about">
+        <div class="container">
+            <div class="content-section">
+                <div class="title">
+                    <h1>About Us</h1>
+                </div>
+                <div class="body">
+                    <div class="content">
+                        <p>Due to culture of reading that is spreading , this had helped me to provide this
+                            website,About our services that we provide such as reading, upload, download your favorite
+                            book, andshare to us. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                            perferendis
+                            excepturi a vero aut blanditiis unde officiis dolorem aperiam, voluptates et dicta rem non
+                            saepe
+                            tempora ipsam est expedita incidunt?
+
+                        </p>
+                    </div>
+                    <div class="iconss">
+                        <li> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- /*contact us*/ -->
+    <section id="contact">
+        <div class="title">
+            <h5>Contact us </h5>
+
+        </div>
+        <div class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia modi iure.
+        </div>
+        <div class="left">
+            <div class="address">
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                <h3>address</h2>
+                    <p>
+                        Lorem ipsum dolor sit. <br>
+                        Lorem, ipsum dolor. <br>
+                        lorem
+                    </p>
+            </div>
+            <div class="address">
+                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                <h3>Phone</h3>
+                <p>123-456-78901548</p>
+            </div>
+            <div class="address">
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <h3>E-mail</h3>
+                <p>dghdgqd@temporary.net</p>
+            </div>
+
+
+        </div>
+        <div class="right">
+            <h2>Contact us</h2>
+            <div>
+                <label for="lname">Full name:</label><br>
+                <input type="text" required>
+                <!-- <span>Full Name</span> -->
+            </div>
+
+            <div>
+                <label for="lname">Email:</label><br>
+                <input type="E-mail" required>
+                <!-- <span>E-mail Id</span> -->
+            </div>
+            <div>
+                <label for="lname"> Message:</label><br>
+                <textarea name="text">
+
+            </textarea>
+                <!-- <span> Type your Message....</span> -->
+            </div>
+
+            <div class="submit">
+                <input type="submit" name="submit">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- <section  class="sectionfooter"style="height: 100vh;">
+    <div class="footer-content">
+        <p>hjhjhjhhj</p>
+        <h3>Foolish Developer</h3>
+    </div>
+ </section> -->
+    <footer>
+        <div class="foot">
+            <div class="sub-foot">
+                <div class="h2">
+                        <h2>SHARED BOOKS;</h2>
+                        <P> This website will help you to easily getting new updates about books.<br>
+                        It has different books in different categories and this will help different<br>
+                         categories of people also to enjoy reading ,download,updating and sharing the<br>
+                          stories. WELCOME!!</P>
+                    </div>
+            </div>
+            <div class="sub-foot">
+                <!-- <div class="h2">
+                    <h2>SHARED BOOKS;</h2>
+                    <P> This website will help you to easily getting new updates about books.<br>
+                    It has different books in different categories and this will help different<br>
+                     categories of people also to enjoy reading ,download,updating and sharing the<br>
+                      stories. WELCOME!!</P>
+                </div> -->
+                <div class="detail1">
+                    <ul>
+                        <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></li>
+
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="sub-foot">
+                <div class="h2">
+                    <h2>contact us</h2>
+                </div>
+                <div class="detail">
+                    <div class="address">
+                        <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        <h3>address</h2>
+                            <p>
+                                Lorem ipsum dolor sit.
+                            </p>
+                    </div>
+                    <div class="address">
+                        <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        <h3>Phone</h3>
+                        <p>123-456-78901548</p>
+                    </div>
+                    <div class="address">
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        <h3>E-mail</h3>
+                        <p>dghdgqd@temporary.net</p>
+                    </div>
+        
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>

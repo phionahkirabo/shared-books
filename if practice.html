@@ -1,0 +1,45 @@
+<html>
+<body>
+
+
+
+<form id="djjx">
+    <input type="text" id="number1"><br>
+    <input type="text" id="number2"><br>
+    <button id="add" onclick="sum()"> Sum </button>
+    <br>
+    <p id="result"> Results will be displayed here!</p>
+</form>
+
+
+    <script>
+
+//   /      if (nber1 >nber2)
+//         console.log("nber1 it is greater");
+//         else
+//         console.log("nbr2 is greater");
+        function sum(){
+       var a = document.getElementById('number1').value;
+       var b = document.getElementById('number2').value;
+          var sum=0;
+          var result;
+
+
+          if(a== ''){
+            result= "Vaue of first  aumber should not be empty!";
+          }
+        
+
+
+          if(isNaN(a) && isNaN(b)){
+            document.getElementById('result').innerHTML="Enter only numbers";
+          }
+
+
+
+
+        }
+        
+        </script>
+</body>
+</html>

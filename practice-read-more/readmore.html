@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>seek || coding</title>
+    <link rel="stylesheet" href="readmore.css">
+    <link rel="stylesheet" href="stylle.css">
+    <!-- <link rel="stylesheet" href="contact.css> -->
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="about us.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <!---we had linked our css file----->
+</head>
+<style type="text/css">
+
+</style>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+             <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SHARED BOOKS</label>
+        <ul>
+            <li><a href='#navbar'>Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href='#cards'>Services</a></li>
+            <li><a href='#contact'>Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Full-width input fields */
+            input[type=text],
+            input[type=password] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            /* Set a style for all buttons */
+            button {
+                background-color: #04AA6D;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+            /* Extra styles for the cancel button */
+            .cancelbtn {
+                width: auto;
+                padding: 10px 18px;
+                background-color: #f44336;
+            }
+
+            /* Center the image and position the close button */
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                position: relative;
+            }
+
+            img.avatar {
+                width: 40%;
+                border-radius: 50%;
+            }
+
+            .container {
+                padding: 16px;
+            }
+
+            span.psw {
+                float: right;
+                padding-top: 16px;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none;
+                /* Hidden by default */
+                position: fixed;
+                /* Stay in place */
+                z-index: 1;
+                /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 70%;
+                /* Full width */
+                height: 100%;
+                /* Full height */
+                overflow: auto;
+                /* Enable scroll if needed */
+                background-color: rgb(0, 0, 0);
+                /* Fallback color */
+                background-color: rgba(0, 0, 0, 0.4);
+                /* Black w/ opacity */
+                padding-top: 60px;
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 5% auto 15% auto;
+                /* 5% from the top, 15% from the bottom and centered */
+                border: 1px solid #888;
+                width: 80%;
+                /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button (x) */
+            .close {
+                position: absolute;
+                right: 25px;
+                top: 0;
+                color: #000;
+                font-size: 35px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: red;
+                cursor: pointer;
+            }
+
+            /* Add Zoom Animation */
+            .animate {
+                -webkit-animation: animatezoom 0.6s;
+                animation: animatezoom 0.6s
+            }
+
+            @-webkit-keyframes animatezoom {
+                from {
+                    -webkit-transform: scale(0)
+                }
+
+                to {
+                    -webkit-transform: scale(1)
+                }
+            }
+
+            @keyframes animatezoom {
+                from {
+                    transform: scale(0)
+                }
+
+                to {
+                    transform: scale(1)
+                }
+            }
+
+            /* Change styles for span and cancel button on extra small screens */
+            @media screen and (max-width: 300px) {
+                span.psw {
+                    display: block;
+                    float: none;
+                }
+
+                .cancelbtn {
+                    width: 100%;
+                }
+
+                /* .loginform h2{
+      font-size: 50px;
+      align-items: center;
+      margin-left: 50%;
+  }
+
+  .loginform{
+      padding-top: 5px;
+      font-size: 50px;
+      align-items: center;
+      padding-left: 50%; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="loginform">
+            <!-- <h2>login-form</h2> -->
+            <p>
+                SHARED BOOKS<br>
+                What we do for our clients<br>
+                You are able and allowed to<br>
+                DOWNLOAD<BR>
+                SHARE<BR>
+                UPDATE.
+            </p>
+        </div>
+        <div class="loginbutton">
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+                id="loginf">Login</button>
+
+        </div>
+        <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
+            id="loginf">Login</button> -->
+
+        <div id="id01" class="modal">
+
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            } 
+        </script>
+
+    <div class="services">
+        <div class="read">
+        <ul>
+            <li><a href="#html">html</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#css">css</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#js">js</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="#java">java</a></li>
+        </ul>
+    </div>  
+        <div class="read-more-container" id="html">
+
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique te netur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="read-more-container" id="css">
+
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="read-more-container" id="js">
+
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique te netur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="bi1.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="read-more-container" id="java">
+
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+            <div class="container">
+                <img src="css.jpg">
+                <p>JS</p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, facere? Quae distinctio
+                    reprehenderit
+                    soluta fugiat, alias, doloremque similique tenetur magni voluptate a, perspiciatis quaerat!
+                    Necessitatibus velit consectetur expedita consequatur assumenda!
+                    <span class="read-more-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quasi quaerat, amet explicabo
+                        magnam,
+                        nulla porro dolorem itaque
+                    </span>
+                </p>
+                <span class="read-more-btn">Read More...</span>
+                <p><a
+                        href="Boundaries_ When to Say Yes, How to Say No to Take Control of Your Life ( PDFDrive )">Download</a>
+                </p>
+            </div>
+
+        </div>
+
+        <script src="readmore.js"></script>
+
+
+    </div>
+    <div>
+        <img src="bi3.jpg" alt=" biology">
+    </div>
+
+</body>
+
+</html>

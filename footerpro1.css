@@ -1,0 +1,40 @@
+*{
+   margin: 0;
+   padding: 0;
+   background-color: aquamarine; 
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+}
+.aboutus{
+    
+    font-size: 30p;
+    font-weight: 100;
+
+}
+.aboutus p{
+font-size: 60p;
+ font-weight: 100;
+}
+.adress{
+    font-size: 30px;
+    list-style: none;
+
+}
+.right{
+    float: right;
+    font-size: 30px;
+    font-weight: 100;
+    padding-right:  200px;
+    margin-top: 40px;
+
+}
+.icons{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}

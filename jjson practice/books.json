@@ -1,0 +1,28 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "HTML",
+        "aothors": "Eschweiler",
+        "email": "sebastian@codingthesmartway.com"
+      },
+      {
+        "id": 2,
+        "title": "js",
+        "authors": "Palmer",
+        "email": "steve@codingthesmartway.com"
+      },
+      {
+        "id": 3,
+        "title": "css",
+        "aothor": "Smith",
+        "email": "ann@codingthesmartway.com"
+      },
+      {
+        "id": 4,
+        "title": "js",
+        "authors": "Palmer",
+        "email": "steve@codingthesmartway.com"
+      }
+    ]
+  }

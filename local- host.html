@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The localStorage Property</h2>
+
+<p><button onclick="delete()" type="button">Click me!</button></p>
+
+<p>Number of clicks:</p>
+<p id="demo"></p>
+
+<p>Click to delete.</p>
+<script>
+delete();
+
+function delete() {
+  if (localStorage.delete) {
+    localStorage.delete = Number(localStorage.delete)+1;
+  } else {
+    localStorage.delete = 1;
+  }
+  document.getElementById("demo").innerHTML = localStorage.delete;
+}
+</script>
+
+</body>
+</html>
